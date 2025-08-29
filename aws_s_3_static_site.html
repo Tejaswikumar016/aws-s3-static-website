@@ -1,0 +1,138 @@
+📂 Project Structure:
+
+aws-s3-static-website/
+│
+├── index.html
+├── style.css
+└── README.md
+
+---
+
+### index.html
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Static Website on AWS S3</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>🚀 Welcome to My Static Website</h1>
+    <p>Hosted on AWS S3 + CloudFront</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>About this Project</h2>
+      <p>
+        This is a demo static website deployed on <b>Amazon S3</b> and served globally
+        using <b>CloudFront CDN</b>. It demonstrates how easy it is to host
+        serverless websites on AWS.
+      </p>
+    </section>
+
+    <section>
+      <h2>Features</h2>
+      <ul>
+        <li>✅ Static Website hosted on Amazon S3</li>
+        <li>✅ Global Content Delivery via CloudFront</li>
+        <li>✅ Secure access with IAM & Bucket Policy</li>
+        <li>✅ Optional Custom Domain with Route 53</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>Created by <b>Your Name</b> | GitHub Portfolio Project</p>
+  </footer>
+</body>
+</html>
+```
+
+---
+
+### style.css
+```css
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f4f4f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  background: #0073e6;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+main {
+  padding: 20px;
+}
+
+h1, h2 {
+  margin-bottom: 10px;
+}
+
+ul li {
+  margin: 5px 0;
+}
+
+footer {
+  text-align: center;
+  background: #222;
+  color: #fff;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+```
+
+---
+
+### README.md
+```markdown
+# 🚀 Static Website on AWS S3 + CloudFront
+
+This is a **demo project** showing how to host a static website using **Amazon S3** and serve it globally with **CloudFront**.
+
+## 📌 Steps to Deploy
+
+1. **Create an S3 Bucket**
+   - Go to AWS S3 → Create bucket → Enable `Static website hosting`.
+   - Upload `index.html` and `style.css` files.
+   - Set bucket policy to make objects public.
+
+2. **Test Website**
+   - Copy the **S3 Website Endpoint URL** and open in browser.
+
+3. **(Optional) Add CloudFront CDN**
+   - Create a CloudFront distribution.
+   - Origin → Your S3 bucket.
+   - Distribution URL will serve your website globally.
+
+4. **(Optional) Custom Domain**
+   - Buy a domain or use Route 53.
+   - Map domain to CloudFront distribution.
+
+## ✅ Features
+- Static website hosted on **Amazon S3**
+- **CloudFront CDN** for faster global access
+- Secure access with IAM & Bucket Policy
+- Optional custom domain with Route 53
+
+---
+
+📌 This project is part of my **Cloud Portfolio** on GitHub.
+```
+
+---
+
+Bhai isko zip karke GitHub pe upload kar do, repo ka naam rakhna: **aws-s3-static-website** 🚀
